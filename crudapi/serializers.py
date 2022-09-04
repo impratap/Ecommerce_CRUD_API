@@ -21,7 +21,7 @@ class CategorySerializer(serializers.ModelSerializer): # extended model serilaiz
 
 # created BookSerializer for Book Model
 class BookSerializer(serializers.ModelSerializer):
-    created_by = serializers.ReadOnlyField(source='created_by.username', read_only=False)
+    #created_by = serializers.ReadOnlyField(source='created_by.username', read_only=False)
     class Meta:
         fields = (
             'id',
@@ -42,7 +42,7 @@ class BookSerializer(serializers.ModelSerializer):
 
 # Here Created ProductSerializer
 class ProductSerializer(serializers.ModelSerializer):
-    created_by = serializers.ReadOnlyField(source='created_by.username', read_only=False)
+    #created_by = serializers.ReadOnlyField(source='created_by.username', read_only=False)
     class Meta:
         fields = (
             'id',
